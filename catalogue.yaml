@@ -22,7 +22,7 @@
 
   - name: checking the directory
     anisble.builtin.stat:
-      path: "{{app}}"
+      path: /app
       register: dir_status
 
   - name: create /app directory
