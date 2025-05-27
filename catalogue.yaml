@@ -23,7 +23,7 @@
   - name: checking the directory
     anisble.builtin.stat:
       path: /app
-      register: dir_status
+    register: dir_status
 
   - name: create /app directory
     when: dir_status.stat.exists == False
