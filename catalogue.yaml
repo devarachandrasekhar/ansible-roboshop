@@ -21,7 +21,7 @@
       name: roboshop
 
   - name: checking the directory
-    anisble.builtin.stat:
+    ansible.builtin.stat:
       path: /app
     register: dir_status
 
