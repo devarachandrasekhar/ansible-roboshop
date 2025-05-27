@@ -12,12 +12,13 @@
     ansible.builtin.yum:
       name: mongodb-org
       state: installed
-      enabled: true
+      
 
   - name: enable mongodb
     ansible.builtin.service:
       name: mongod
       state: started
+      enabled: true
 
   - name: Update bindIp from 127.0.0.1 to 0.0.0.0 in mongod.conf
     ansible.builtin.replace:
